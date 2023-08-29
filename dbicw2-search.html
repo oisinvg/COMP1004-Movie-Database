@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DBICW2 Search</title>
+
+        <link rel="stylesheet" type="text/css" href="dbicw2.css">
+        <script type="text/javascript" src="dbicw2.js"></script>
+    </head>
+
+    <body>
+
+        <div id="main"> <!-- non sidebar content -->
+
+            <div id="content"> <!--div start-->
+                <h1>Movie/Actor Search</h1> 
+                <hr> <br>
+                <form action="dbicw2-search.php" onsubmit="return validate(this)">
+                    Movie/genre/actor: <input type="text" name="title">
+                    <input type="submit" name="Search">
+                </form>
+            </div>
+
+            <div id="sidebar"> <!-- sidebar with nav links-->
+                <a href="dbicw2.html">Home<br><br></a>
+                <a href="dbicw2-search.html">Search<br><br></a>
+                <a href="dbicw2-add.html">Add Movie<br><br></a>
+                <a href="dbicw2-addActor.html">Add Actor<br><br></a>
+                <a href="dbicw2-delete.php">Delete Movie<br><br></a>
+                <a href="dbicw2-deleteActor.php">Delete Actor<br><br></a>
+            </div>
+            
+        </div>
+    </body>
+</html>

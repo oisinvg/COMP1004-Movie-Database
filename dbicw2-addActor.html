@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DBICW2 Add</title>
+
+        <link rel="stylesheet" type="text/css" href="dbicw2.css">
+        <script type="text/javascript" src="dbicw2.js"></script>
+    </head>
+
+    <body>
+
+        <div id="sidebar"> <!-- sidebar with nav links-->
+            <a href="dbicw2.html">Home<br><br></a>
+            <a href="dbicw2-search.html">Search<br><br></a>
+            <a href="dbicw2-add.html">Add Movie<br><br></a>
+            <a href="dbicw2-addActor.html">Add Actor<br><br></a>
+            <a href="dbicw2-delete.php">Delete Movie<br><br></a>
+            <a href="dbicw2-deleteActor.php">Delete Actor<br><br></a>
+        </div>
+
+        <div id="main"> <!-- non sidebar content -->
+
+            <div id="content"> <!--div start-->
+                <h1>Add Actor</h1>
+                <p style="text-align: left;"><a href="dbicw2-add.html">Add a movie</a></p>
+                <hr> <br>
+
+                <form action="dbicw2-addActor.php" onsubmit="return validate(this)">
+                <table style="border:0px solid; border-collapse: collapse" align="center">
+                    <tr>
+                        <td>Actor:</td><td><input type="text" name="actor"></td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 text-align="center"><input type="submit" name="submit"></td>
+                    </tr>
+                </table>                
+                </form>
+            </div>
+            
+        </div>
+    </body>
+</html>
